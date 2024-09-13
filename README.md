@@ -33,8 +33,9 @@ docker run --rm guest-service-tests
 - `DELETE /guests/{id}` — Delete a guest by ID.
 
 ## API Documentation
-#### Endpoints
-1. Create a Guest
+### Endpoints
+1. #### Create a Guest
+   ```
     Endpoint: POST /guests
     Description: Creates a new guest.
     Request Format:
@@ -56,7 +57,9 @@ docker run --rm guest-service-tests
             {
                 "error": "Error message"
             }
-2. Retrieve All Guests
+   ```
+2. #### Retrieve All Guests
+   ```
     Endpoint: GET /guests
     Description: Retrieves all guests.
     Response Format (JSON):
@@ -73,7 +76,9 @@ docker run --rm guest-service-tests
         {
             "error": "Error message"
         }
-3. Retrieve a Guest by ID
+   ```
+3. #### Retrieve a Guest by ID
+   ```
     Endpoint: GET /guests/{id}
     Description: Retrieves a guest by ID.
     Parameters:
@@ -92,7 +97,9 @@ docker run --rm guest-service-tests
         {
             "error": "Error message"
         }
-4. Update a Guest by ID
+   ```
+4. #### Update a Guest by ID
+   ```
     Endpoint: PUT /guests/{id}
     Description: Updates a guest by ID.
     Parameters:
@@ -113,7 +120,9 @@ docker run --rm guest-service-tests
         {
             "error": "Error message"
         }
-5. Delete a Guest by ID
+   ```
+5. #### Delete a Guest by ID
+   ```
     Endpoint: DELETE /guests/{id}
     Description: Deletes a guest by ID.
     Parameters:
@@ -127,6 +136,7 @@ docker run --rm guest-service-tests
         {
             "error": "Error message"
         }
+   ```
 #### Error Codes
     400 Bad Request: The request was invalid.
     404 Not Found: The requested resource was not found.
